@@ -1,0 +1,13 @@
+# create the image
+FROM node:alpine
+
+# set work directory
+WORKDIR '/app'
+
+# Initialize node.js
+COPY package.json .
+RUN npm install
+COPY ./ ./
+
+# assign inital command
+CMD ["npm", "run", "start"]
