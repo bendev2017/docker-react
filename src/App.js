@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            *** Learning *** en cours de React et bonjour à tous!
+            *** Learning *** en cours de React et bonjour à tous! *** Deployé sur AWS!
           </a>
         </header>
       </div>
