@@ -1,9 +1,9 @@
 #  section 1 for build
 FROM node:alpine as builder
 WORKDIR '/app'
-COPY package.json .
+COPY package*.json ./
 RUN npm install
-COPY . .
+COPY ./ ./
 RUN npm run build
 
 # section 2 for NGINX in Production
