@@ -8,5 +8,7 @@ RUN npm run build
 
 # section 2 for NGINX in Production
 FROM nginx
+
 EXPOSE 80
+
 COPY --from=builder /app/build /usr/share/nginx/html
